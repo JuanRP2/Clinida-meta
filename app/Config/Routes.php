@@ -42,6 +42,10 @@ $routes->get('/turnos', 'turnosController::turnos');
 $routes->get('/permisos', 'permisosController::permisos');
 $routes->get('/radicar', 'radicarController::radicar');
 $routes->get('/cuadroturno', 'cuadroturnoController::cuadroturno');
+$routes->post('/prueba', 'Home::prueba',['as' => 'prueba']);
+$routes->post('/cambioturno', 'turnosController::registro',['as' => 'cambioturno']);
+$routes->get('/listarturno','turnosController::listar',['as' => 'listarturno']);  
+$routes->get('/horasextras','horasextrasController::horasextras' );
 
  
 /*

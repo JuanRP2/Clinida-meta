@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="<?= base_url('css/estilos.css') ?>">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>ClinicaMeta</title>
 
@@ -33,7 +34,7 @@
                 <div class="sidebar-sticky pt-3">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link active" href="./inicio">
                                 <span data-feather="home"></span>
                                 Inicio <span class="sr-only">(current)</span>
                             </a>
@@ -57,6 +58,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="./horasextras">
+                                <span data-feather="bar-chart-2"></span>
+                                Horas Extras
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="./cuadroturno">
                                 <span data-feather="bar-chart-2"></span>
                                 Cuadro De Turnos
@@ -69,8 +76,7 @@
                     
                 </div>
             </nav>
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-               
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">               
                 <?= $this->renderSection('content') ?>
             </main>
         </div>

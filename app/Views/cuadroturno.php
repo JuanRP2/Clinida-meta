@@ -1,4 +1,5 @@
 <?= $this->extend('layout\principal') ?>
 <?= $this->section('content') ?>
-    <h1>pagina de cuadro de turnos!</h1>
+   <center><h1>Cuadro De Turnos</h1></center>
+    <hr size="1px" color="black">
 <?= $this->endSection() ?>
