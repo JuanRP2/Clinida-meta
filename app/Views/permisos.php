@@ -6,7 +6,7 @@
         <hr size="1px" color="black">
     </div>
 </div>
-<form>
+<form action="<?= url_to('solpermiso') ?>" method="post">
 <div class="row">
     <div class="col-md-4 col-sm-12">
         <label>Fecha De Solicitud</label>
@@ -27,9 +27,9 @@
     <div class="col-md-4 col-sm-12">
         <label>Servicio</label>
         <select  name="servicio_id" class="form-control form-control-sm mb-3">
-            <?php foreach ($servicios as $item) : ?>
-                <option value="<?= $item['id']; ?>"> <?= $item['nombre'] ?></option>
-            <?php endforeach ?>
+         <?php foreach ($servicios as $item) : ?>
+            <option value="<?= $item['id']; ?>"> <?= $item['nombre'] ?></option>
+             <?php endforeach ?>
         </select>
     </div>
     <div class="col-md-4 col-sm-12">
@@ -62,7 +62,7 @@
     </div>
     <div class="col-md-12 col-sm-12">
   <label for="formFileMultiple" class="form-label">Documentos Soportes Presentados</label>
-  <input class="form-control" type="file" id="formFileMultiple" multiple required />
+  <input class="form-control" type="file" id="formFileMultiple" multiple  />
 </div>
 </div>
 <br>

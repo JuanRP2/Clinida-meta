@@ -25,7 +25,7 @@ class TUsuarios extends Migration
             ],
             'type' => [
                 'type'       => 'VARCHAR',
-                'constraint' => '255',
+                'constraint' => '100',
             ],
         ]);
         $this->forge->addKey('id_usuario', true);

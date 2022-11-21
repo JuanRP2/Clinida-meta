@@ -1,10 +1,8 @@
-<?php
+<?php namespace App\Filters;
 
-namespace App\Filters;
-
-use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
+use CodeIgniter\Filters\FilterInterface;
 
 class SessionAdmin implements FilterInterface
 {
@@ -12,8 +10,11 @@ class SessionAdmin implements FilterInterface
     {
         // Do something here
         if(!session('type') == 'admin') {
-            return redirect()->to(base_url('/'));}
+        	return redirect()->to(base_url('/'));
+        }
     }
+
+    //--------------------------------------------------------------------
 
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     {

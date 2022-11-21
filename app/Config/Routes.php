@@ -38,16 +38,24 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/inicio', 'Home::inicio');
 $routes->post('/login', 'Home::login',['as'=>'login']);
+$routes->get('/salir', 'Home::salir',['as'=>'salir']);
 $routes->get('/turnos', 'turnosController::turnos');
+$routes->post('/cambioturno', 'turnosController::registro',['as' => 'cambioturno']);
+$routes->get('/listarturno','turnosController::listar',['as' => 'listarturno']); 
 $routes->get('/permisos', 'permisosController::permisos');
+$routes->post('/solpermiso', 'permisosController::registro',['as' => 'solpermiso']);
+$routes->get('/listarpermiso','permisosController::listar',['as' => 'listarpermiso']); 
+
+
 $routes->get('/radicar', 'radicarController::radicar');
+$routes->post('/radicarva', 'radicarController::registro',['as' => 'radicarva']);
+$routes->get('/listarradicar','radicarController::listar',['as' => 'listarradicar']);
 $routes->get('/cuadroturno', 'cuadroturnoController::cuadroturno');
 $routes->post('/prueba', 'Home::prueba',['as' => 'prueba']);
-$routes->post('/cambioturno', 'turnosController::registro',['as' => 'cambioturno']);
-$routes->get('/listarturno','turnosController::listar',['as' => 'listarturno']);  
 $routes->get('/horasextras','horasextrasController::horasextras' );
-
- 
+$routes->get('/registrarhoras','horasextrasController::listar',['as' => 'registrarhoras}']); 
+$routes->post('/horas', 'horasextrasController::registro',['as' => 'horas']);
+$routes->post('/cantidad', 'horasextrasController::registro',['as' => 'cantidad']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing

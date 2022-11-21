@@ -1,5 +1,16 @@
 <?= $this->extend('layout\principal') ?>
 <?= $this->section('content') ?>
+
+<?php 
+header("Pragma: public");
+header("Expires: 0");
+$filename = "listarturno.xls";
+header("Content-type: application/x-msdownload");
+header("Content-Disposition: attachment; filename=$filename");
+header("Pragma: no-cache");
+header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+
+?>
 <table class="table table-bordered border-primary">
 <thead>
     <th>ID</th>

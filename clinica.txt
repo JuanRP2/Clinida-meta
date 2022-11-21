@@ -1,0 +1,3 @@
+cosas a mejorar: hacer en el login un apartado para que el usuario que vaya ingresar pueda seleccionar si es admin o usuario,
+tambien dividir el inicio, uno para el usuario que quedaria tal y como esta, y otro para el admin que tocaria agregarle
+botones los cuales haran la funcion de desargar un excel con los datos que estan en la base de datos en mysql.

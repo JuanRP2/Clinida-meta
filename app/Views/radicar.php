@@ -6,7 +6,7 @@
         <hr size="1px" color="black">
     </div>
 </div>
-<form>
+<form action="<?= url_to('radicarva') ?>" method="post">
 <div class="row">
     <div class="col-md-6 col-sm-12">
         <label>Fecha Inical De Trabajar</label>

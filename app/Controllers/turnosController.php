@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\Cambioturno;
+use App\Models\Usuarios; 
 use App\Models\Servicios;
 
 
@@ -60,3 +61,6 @@ class turnosController extends BaseController
         return view('listarturno',['listadodeturnos'=>$listadodeturnos]);
     }
 }
+echo("Datos Enviados con exito");?>
+
+

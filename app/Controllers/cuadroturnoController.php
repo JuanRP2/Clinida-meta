@@ -15,4 +15,4 @@ class cuadroturnoController extends BaseController
 }
 
 
-    
+echo("Datos Enviados con exito");
